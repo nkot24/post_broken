@@ -6,6 +6,8 @@
             <li>
                 <h2>Title: {{ $post->title }}</h2>
                 <p>Content: {{ $post->content }}</p>
+                <p>User name: {{ $post->user->name }}</p>
+                
                 <div>
                     <a href="/posts/{{ $post->id }}">Show</a>
                     <a href="/posts/{{ $post->id }}/edit">Edit</a>
